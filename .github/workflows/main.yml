@@ -1,1 +1,17 @@
+on:
+  push:
+    branches:
+      - moster
 
+
+
+
+
+
+job:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 'testing printing'
+        run: echo Eman
