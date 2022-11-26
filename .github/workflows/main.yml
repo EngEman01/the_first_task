@@ -13,8 +13,10 @@ job:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'testing Github action'
-        run: pwd
+      - name: 'testing Github action before'
+        run: ls
 
-      - name: 'testing printing'
-        run: echo Eman
+      - uses: actions/checkout@v3
+
+      - name: 'testing Github action after'
+        run: ls
